@@ -1,6 +1,6 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-import { matchRoutes } from 'react-router-dom';
+// import { matchRoutes } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import SingleCard from './components/SingleCard';
 
@@ -43,7 +43,7 @@ function App() {
 
     if (choiceOne && choiceTwo){
       setDisabled(true)
-      if(choiceOne.src === choiceTwo.src && choiceOne.id != choiceTwo.id){
+      if(choiceOne.src === choiceTwo.src && choiceOne.id !== choiceTwo.id){
         //console.log('those cards match')
         setCards(prevCards => {
           return prevCards.map(card => {
